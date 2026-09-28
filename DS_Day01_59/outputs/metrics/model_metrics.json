@@ -1,0 +1,102 @@
+{
+  "default_threshold_metrics": {
+    "accuracy": 0.9505,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1_score": 0.0,
+    "roc_auc": 0.5019,
+    "pr_auc": 0.0503,
+    "confusion_matrix": [
+      [
+        47524,
+        1
+      ],
+      [
+        2475,
+        0
+      ]
+    ],
+    "threshold_used": 0.5,
+    "note": "Default 0.5 threshold. ROC-AUC near 0.50 indicates that the available features have very low discriminative power for predicting transaction failure in this dataset. Failures appear to be near-randomly distributed across feature combinations. This is an honest finding \u2014 not a modelling error. See threshold-optimised metrics below for operational recall improvement."
+  },
+  "optimised_threshold_metrics": {
+    "threshold_used": 0.0667,
+    "accuracy": 0.7517,
+    "precision": 0.0529,
+    "recall": 0.2376,
+    "f1_score": 0.0865,
+    "roc_auc": 0.5019,
+    "pr_auc": 0.0503,
+    "confusion_matrix": [
+      [
+        36996,
+        10529
+      ],
+      [
+        1887,
+        588
+      ]
+    ],
+    "note": "Threshold optimised via Youden's J statistic (threshold=0.0667). Improves recall at cost of precision \u2014 appropriate for failure detection use cases."
+  },
+  "threshold_used": 0.0667,
+  "accuracy": 0.7517,
+  "precision": 0.0529,
+  "recall": 0.2376,
+  "f1_score": 0.0865,
+  "roc_auc": 0.5019,
+  "pr_auc": 0.0503,
+  "confusion_matrix": [
+    [
+      36996,
+      10529
+    ],
+    [
+      1887,
+      588
+    ]
+  ],
+  "top_features": [
+    {
+      "feature": "amount_log",
+      "importance": 0.10535373579399165
+    },
+    {
+      "feature": "amount_inr",
+      "importance": 0.10505659360817778
+    },
+    {
+      "feature": "hour",
+      "importance": 0.07091918072887114
+    },
+    {
+      "feature": "transaction_type_P2P",
+      "importance": 0.016298334382437274
+    },
+    {
+      "feature": "receiver_age_group_26-35",
+      "importance": 0.01560373686784148
+    },
+    {
+      "feature": "transaction_type_P2M",
+      "importance": 0.01559484081225729
+    },
+    {
+      "feature": "sender_age_group_26-35",
+      "importance": 0.01508799270775238
+    },
+    {
+      "feature": "sender_bank_SBI",
+      "importance": 0.01507096450265179
+    },
+    {
+      "feature": "receiver_bank_SBI",
+      "importance": 0.014134855813241434
+    },
+    {
+      "feature": "receiver_age_group_18-25",
+      "importance": 0.014115185050472606
+    }
+  ],
+  "data_finding": "Threshold optimised via Youden's J statistic (threshold=0.0667). Improves recall at cost of precision \u2014 appropriate for failure detection use cases."
+}

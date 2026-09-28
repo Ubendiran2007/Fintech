@@ -1,0 +1,5 @@
+transaction_type,transaction_count,failed_count,success_count,failure_rate_pct,success_rate_pct
+P2P,112445,5575,106870,4.96,95.04
+P2M,87660,4339,83321,4.95,95.05
+Bill Payment,37368,1824,35544,4.88,95.12
+Recharge,12527,638,11889,5.09,94.91

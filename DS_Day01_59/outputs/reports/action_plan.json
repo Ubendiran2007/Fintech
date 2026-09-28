@@ -1,0 +1,38 @@
+[
+  {
+    "category": "Bank Operations",
+    "priority": "HIGH",
+    "recommendation": "Initiate a technical review with Yes Bank (failure rate: 5.1%) to identify root causes \u2014 network connectivity, API timeouts, and authentication issues should be investigated first.",
+    "evidence": "Bank analysis shows Yes Bank exceeds the average failure rate of 4.96%."
+  },
+  {
+    "category": "Payment Routing",
+    "priority": "MEDIUM",
+    "recommendation": "Implement intelligent payment routing and retry strategies for transaction types showing elevated failure rates. Consider fallback routing to alternate payment rails.",
+    "evidence": "Payment method analysis identified differential failure rates across transaction types."
+  },
+  {
+    "category": "Peak-Time Capacity",
+    "priority": "HIGH",
+    "recommendation": "Review infrastructure capacity during the 'Early Morning' time slot (failure rate: 5.15%). Implement auto-scaling and pre-provisioned capacity for peak hours.",
+    "evidence": "Time analysis shows 'Early Morning' has the highest failure rate."
+  },
+  {
+    "category": "Device Compatibility",
+    "priority": "MEDIUM",
+    "recommendation": "Investigate 'Web' device-specific failure patterns. Review SDK compatibility, browser/app version support, and UX flows for this device type.",
+    "evidence": "Device analysis shows 'Web' has the highest failure rate at 5.15%."
+  },
+  {
+    "category": "Real-time Monitoring",
+    "priority": "HIGH",
+    "recommendation": "Deploy real-time failure-rate monitoring with automated threshold alerts. Set alert threshold at mean + 2\u00d7STD of rolling hourly failure rate. Historical data shows 1 spike day(s) that required immediate investigation.",
+    "evidence": "Spike detection analysis identified statistically unusual failure periods."
+  },
+  {
+    "category": "Data Quality & Fraud",
+    "priority": "LOW",
+    "recommendation": "Continue monitoring fraud_flag in parallel with transaction failures. Ensure fraudulent transaction patterns do not artificially inflate failure rates in operational reporting.",
+    "evidence": "Dataset includes fraud_flag; separating fraud from operational failures improves root-cause analysis accuracy."
+  }
+]

@@ -1,0 +1,5 @@
+time_period,transaction_count,failed_count,failure_rate_pct
+Early Morning,11620,598,5.15
+Morning,58162,2916,5.01
+Afternoon,88982,4371,4.91
+Evening,91236,4491,4.92

@@ -1,0 +1,45 @@
+{
+  "rows_before_cleaning": 250000,
+  "full_duplicate_rows_removed": 0,
+  "duplicate_transaction_ids_remaining": 0,
+  "missing_values_before": {
+    "transaction_id": 0,
+    "timestamp": 0,
+    "transaction_type": 0,
+    "merchant_category": 0,
+    "amount_inr": 0,
+    "transaction_status": 0,
+    "sender_age_group": 0,
+    "receiver_age_group": 0,
+    "sender_state": 0,
+    "sender_bank": 0,
+    "receiver_bank": 0,
+    "device_type": 0,
+    "network_type": 0,
+    "fraud_flag": 0,
+    "hour_of_day": 0,
+    "day_of_week": 0,
+    "is_weekend": 0
+  },
+  "invalid_timestamps_removed": 0,
+  "invalid_status_removed": 0,
+  "rows_after_cleaning": 250000,
+  "amount_validation": {
+    "negative_amounts": 0,
+    "zero_amounts": 0,
+    "amount_min": 10.0,
+    "amount_max": 42099.0,
+    "amount_mean": 1311.756036,
+    "amount_p99": 9003.01000000001
+  },
+  "status_mapping": {
+    "SUCCESS": "Success (failure=0)",
+    "FAILED": "Failed (failure=1)"
+  },
+  "time_period_mapping": {
+    "Early Morning": "00:00-05:59",
+    "Morning": "06:00-11:59",
+    "Afternoon": "12:00-17:59",
+    "Evening": "18:00-23:59"
+  }
+}

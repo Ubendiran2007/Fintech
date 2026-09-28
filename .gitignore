@@ -1,0 +1,16 @@
+# Ignore models and large binaries
+*.pkl
+*.model
+
+# Ignore python caches
+__pycache__/
+*.pyc
+
+# Ignore large datasets
+*.csv
+!DS_Day01_59/outputs/reports/*.csv
+!DS_Day01_59/outputs/metrics/*.csv
+
+# Allow small output CSVs but ignore raw/processed ones
+data/raw/
+data/processed/

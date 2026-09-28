@@ -1,0 +1,9 @@
+sender_bank,transaction_count,failed_count,success_count,failure_rate_pct,success_rate_pct
+SBI,62693,3095,59598,4.94,95.06
+HDFC,37485,1808,35677,4.82,95.18
+ICICI,29769,1499,28270,5.04,94.96
+IndusInd,25173,1247,23926,4.95,95.05
+Axis,25042,1239,23803,4.95,95.05
+PNB,24946,1221,23725,4.89,95.11
+Yes Bank,24860,1269,23591,5.1,94.9
+Kotak,20032,998,19034,4.98,95.02

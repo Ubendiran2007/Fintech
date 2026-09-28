@@ -1,0 +1,4 @@
+device_type,transaction_count,failed_count,failure_rate_pct
+Web,12610,650,5.15
+Android,187777,9278,4.94
+iOS,49613,2448,4.93

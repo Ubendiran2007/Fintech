@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Overall Failure Rate",
+    "text": "The overall transaction failure rate is 4.95%, meaning approximately 5 out of every 100 transactions fail. Total failures: 12,376 out of 250,000 transactions."
+  },
+  {
+    "id": 2,
+    "title": "Bank with Highest Failure Rate",
+    "text": "Among sender banks, Yes Bank records the highest observed failure rate at 5.1% across 24,860 transactions. Note: this is an observed association, not a proven causal relationship. The overall average bank failure rate is 4.96%."
+  },
+  {
+    "id": 3,
+    "title": "Payment Method Failure Rates",
+    "text": "Transaction type 'Recharge' has the highest failure rate at 5.09% (12,527 transactions), while 'Bill Payment' has the lowest at 4.88% (37,368 transactions)."
+  },
+  {
+    "id": 4,
+    "title": "Peak Failure Time Period",
+    "text": "The 'Early Morning' period shows the highest failure rate at 5.15% (598 failures out of 11,620 transactions). Peak failure hour: 06:00 with 5.4% failure rate."
+  },
+  {
+    "id": 5,
+    "title": "Failure Spike Detection",
+    "text": "Statistical failure spikes (>rolling_mean + 2\u00d7STD) detected on 1 day(s)."
+  },
+  {
+    "id": 6,
+    "title": "Transaction Amount & Failure",
+    "text": "Median transaction amount for successful transactions: INR 628 vs INR 636 for failed transactions (higher by 1.3%). The difference is marginal, though this is a correlation, not a confirmed cause."
+  },
+  {
+    "id": 7,
+    "title": "Device Type Failure Pattern",
+    "text": "Device 'Web' shows the highest observed failure rate at 5.15% across 12,610 transactions. Device-specific failure differences should trigger compatibility and UX reviews for higher-failure device categories."
+  }
+]
